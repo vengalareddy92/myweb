@@ -1,5 +1,5 @@
 ---
-- hosts: 13.58.182.120
+- hosts: all
   # sudo permission
   become: true
 
