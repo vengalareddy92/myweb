@@ -1,0 +1,18 @@
+//pipeline fir get the source code and build and test and deploy
+pipeline {
+    agent {
+        label "master"
+    }
+    
+    stages {
+        stage("clone code") {
+            steps {
+                script {
+                    // Let's clone the source
+                    git 'https://github.com/ybmadhu/spring3-mvc-maven-xml-hello-world.git';
+                }
+            }
+        }
+    }
+}
+       
