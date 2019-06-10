@@ -7,10 +7,11 @@ pipeline {
     stages {
         stage("clone code") {
             steps {
-                script {
+                //script {
                     // Let's clone the source
-                    git 'https://github.com/vengalareddy92/myweb.git';
-                }
+                    //git 'https://github.com/vengalareddy92/myweb.git';
+                //}
+                echo "welcome"
             }
         }
     }
